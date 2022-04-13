@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  margin-top: 50px;
+  height: 380px;
+  width: 700px;
+  display: flex;
+  background-color: white;
+  border-radius: 21px;
+  /* border-radius:3% 3% 3% 3% / 5% 6% 7% 7%; */
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  width: 380px;
+  height: 88%;
+  /* border: 1px solid black; */
+  border-radius: 5%;
+  margin: auto;
+  margin-right: 5px;
+  margin-left: 30px;
+  padding-right: 20px;
+}
+
+.icon {
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.heading {
+  display: block;
+  font-weight: 700;
+  font-size: 13px;
+  color: hsl(186, 14%, 43%);
+}
+
+
+.billing {
+  margin-top: 10px;
+
+}
+
+input[name="bill"],
+input[name="persons"] {
+  background: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 5px;
+  color: hsla(183, 100%, 15%, 1);
+  font-size: 20px;
+  font-weight: 700;
+  height: 40px;
+  padding-right: 5px;
+  padding-left: 25px;
+  text-align: right;
+  width: 98%;
+  margin-top: 5px;
+}
+
+/* remove up down btn from inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[name="bill"]:hover,
+input[name="persons"]:hover {
+  border: 2px solid hsla(172, 67%, 45%, 1);
+}
+
+.initial-percen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 98%;
+}
+
+.one,
+.two {
+  margin-top: 10px;
+}
+
+/* CSS for selectTip percentage block section */
+.percentage {
+  background-color: hsla(183, 100%, 15%, 1);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  display: flex;
+  width: 30%;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.percentage:hover {
+  background-color: hsla(172, 67%, 45%, 1);
+  cursor: pointer;
+  color: hsla(183, 100%, 15%, 1);
+  font-weight: 700;
+}
+
+.selectTip {
+  margin-top: 30px;
+}
+
+.default {
+  background-color: hsla(172, 67%, 45%, 1);
+  cursor: pointer;
+  color: hsla(183, 100%, 15%, 1);
+  font-weight: 700;
+}
+
+.active {
+  font-family: 'Space Mono', monospace;
+  background-color: hsl(189, 41%, 97%);
+  color: hsla(183, 100%, 15%, 1);
+  font-weight: 700;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.active:hover {
+  background-color: hsl(189, 41%, 97%);
+  cursor: text;
+}
+
+.noofpeoples {
+  margin-top: 30px;
+}
+
+.heading1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.heading-disable {
+  width: 50%;
+  text-align: end;
+  color: rgb(238, 67, 67);
+  display: none;
+}
+
+
+/* The result part of CSS starts here */
+.result {
+  width: 380px;
+  height: 88%;
+  background-color: hsla(183, 100%, 15%, 1);
+  border-radius: 5%;
+  font-size: 13px;
+  margin-right: 25px;
+  padding: 28px;
+}
+
+.amount {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 300;
+}
+
+.amount-heading-one {
+  width: 30%;
+}
+
+.amount-heading1 {
+  color: white;
+}
+
+.amount-heading2 {
+  color: hsl(186, 14%, 43%);
+}
+
+.amount-tip {
+  color: hsla(172, 67%, 45%, 1);
+  font-size: 30px;
+  font-weight: 700;
+  width: 70%;
+  text-align: right;
+}
+
+#btn {
+  width: 100%;
+  background-color: hsla(172, 67%, 45%, 1);
+  color: hsla(183, 100%, 15%, 1);
+  border: none;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 100px;
+}
+
+#btn:hover {
+  background-color: rgb(42, 218, 194);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+@media screen and (max-width:715px) and (min-width:650px) {
+  .card {
+    width: 90%;
+  }
+
+  .price {
+    margin-bottom: 20px;
+  }
+
+  #btn {
+    margin-top: 80px;
+  }
+
+  .amount-tip {
+    height: 69px;
+  }
+
+  .amount-heading-one {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width:650px) {
+
+  .card {
+    height: 650px;
+    display: block;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  .price {
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    /* margin-bottom: 20px; */
+    padding: 10px;
+  }
+
+  .result {
+    height: 300px;
+    width: 80%;
+    font-size: 13px;
+    margin: auto;
+  }
+
+  .billing {
+    margin-top: 0px;
+  }
+
+  
+.icon {
+  padding-top: 13px;
+  padding-left: 10px;
+}
+
+  input[name="bill"],
+  input[name="persons"] {
+    height: 40px;
+    padding:  0px 2px 0px 0px;
+    margin: 0;
+  }
+
+
+  .one,
+  .two {
+    margin-top: 2%;
+  }
+
+  /* CSS for selectTip percentage block section */
+  .percentage {
+    width: 30%;
+  }
+  
+  .selectTip {
+    margin-top: 20px;
+  }
+
+  .active {
+    padding-right: 8px;
+  }
+  
+  .noofpeoples {
+    margin-top: 20px;
+  }
+
+  .heading1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .heading-disable {
+    width: 50%;
+    text-align: end;
+    color: rgb(238, 67, 67);
+    display: none;
+  }
+
+
+  /* The result part of CSS starts here */
+
+  .amount {
+    margin-top: 15px;
+  }
+
+  #btn {
+    margin-top: 50px;
+    height: 30px;
+  }
+
+}

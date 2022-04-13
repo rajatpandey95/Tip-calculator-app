@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <script src="./javascript/script.js" defer></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+  
+</head>
+
+<body>
+  <div class="container">
+    <img src="./images/logo.svg" alt="">
+    <div class="card">
+      <div class="price">
+        
+        <div class="billing">
+          <label for="bill" class="heading">Bill</label>
+          <img class="icon" src="./images/icon-dollar.svg" alt="">
+          <input id="bill-input" type="number" name="bill" placeholder="0">
+        </div>
+        
+        <div class="selectTip">
+          <label for="" class="heading"> Select Tip %</label>
+          <div class="initial-percen one">
+            <p  id="per5" class="percentage percen">5%</p>
+            <p id="per10" class="percentage percen">10%</p>
+            <p id="per15" class="percentage percen default">15%</p>
+          </div>
+          <div class="initial-percen two">
+            <p id="per25" class="percentage percen">25%</p>
+            <p id="per50" class="percentage percen">50%</p>
+            <input id="custom" class="percentage active" type="number" name="custom" placeholder="CUSTOM">
+          </div>
+        </div>
+
+        <div class="noofpeoples">
+          
+          <div class="heading heading1">
+            <p>Number Of People</p>
+            <p id="disabledHeading" class="heading-disable">Can't be zero</p>
+          </div>
+          <img class="icon" src="./images/icon-person.svg" alt="">
+          <input id="persons" type="number" name="persons" value="1">
+        </div>
+
+      </div>
+      
+      <div class="result">
+        <div class="amount">
+          <div class="amount-heading-one">
+            <p class="amount-heading1">Tip Amount</p>
+            <p class="amount-heading2">/ person</p>
+          </div>
+          <div class="amount-tip">
+            <p id="tipPerPerson">$4.27</p>
+          </div>
+        </div>
+
+        <div class="amount">
+          <div class="amount-heading-one">
+            <p class="amount-heading1">Total</p>
+            <p class="amount-heading2">/ person</p>
+          </div>
+          <div class="amount-tip">
+            <p id="totalPerPerson">$32.79</p>
+          </div>
+        </div>
+
+        <button id="btn" type="reset">RESET</button>
+      </div>
+    
+    </div>
+  </div>
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
